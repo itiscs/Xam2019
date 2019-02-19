@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppFirst"
+             x:Class="AppFirst.MainPage">
+
+    <ScrollView>
+        <StackLayout x:Name="stk">
+            <ImageButton Source="plus.png" Clicked="ImageButton_Clicked"
+                         HeightRequest="50" Margin="10,10,10,10" />
+            <Entry x:Name="userName" Text="Name" />
+            <Entry x:Name="txtAge" Text="20" />
+            <Button x:Name="btnSecond" Text="Вторая страница" Clicked="BtnSecond_Clicked"  />
+            
+            <!--Label Text="Welcome to Xamarin.Forms!" 
+               HorizontalOptions="Center"/>
+            <BoxView WidthRequest="100" HeightRequest="100" Color="Blue" />
+
+            <BoxView WidthRequest="100" HeightRequest="100" Color="Red" />
+
+            <BoxView WidthRequest="100" HeightRequest="100" Color="Yellow" />
+
+            <BoxView WidthRequest="100" HeightRequest="100" Color="Blue" />
+
+            <BoxView WidthRequest="100" HeightRequest="100" Color="Red" />
+
+            <BoxView WidthRequest="100" HeightRequest="100" Color="Yellow" /-->
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
