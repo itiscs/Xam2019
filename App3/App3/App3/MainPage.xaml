@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+    <ScrollView>
+        <StackLayout>
+        <Frame BackgroundColor="Coral" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button x:Name="btn1" Clicked="btn1_Clicked"  Margin="20,100,20,0" Text="Кнопка" FontSize="Medium" HeightRequest="100" WidthRequest="400" />
+        <Entry x:Name="txtName" Placeholder="Введите имя"/>
+        <Button x:Name="btn2" Clicked="btn2_Clicked"  Margin="20,10,20,0" Text="Tabbed page" FontSize="Medium" HeightRequest="100" WidthRequest="400" />
+
+        <Button x:Name="btn3" Clicked="btn3_Clicked"  Margin="20,10,20,0" Text="Master Detail page" FontSize="Medium" HeightRequest="100" WidthRequest="400" />
+
+
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>
