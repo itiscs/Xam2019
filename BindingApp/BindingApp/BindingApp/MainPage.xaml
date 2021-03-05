@@ -13,6 +13,8 @@
         
         <Slider x:Name="slider" Minimum="0" Maximum="50" Value="30"  MaximumTrackColor="DeepPink" MinimumTrackColor="DeepPink"  /-->
 
+        <Button Text="Добавить новый" Clicked="Button_Clicked"/>
+
         <Label Text="{Binding Source={x:Reference Name=phonesList}, 
             Path=SelectedItem.Title}"  FontSize="Large" />
 
@@ -37,6 +39,9 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        
+        
+        
 
 
 

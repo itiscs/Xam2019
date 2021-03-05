@@ -25,5 +25,16 @@ namespace BindingApp
             CurrentPhone = currentPhone;
             this.BindingContext = CurrentPhone;
         }
+
+        private async void btnSave_Clicked(object sender, EventArgs e)
+        {
+            var phone = (Phone)BindingContext;
+            if (!String.IsNullOrEmpty(phone.Title))
+            {
+                await App.Database.SaveItemAsync(phone);
+            }
+            await Navigation.PopAsync();
+
+        }
     }
 }

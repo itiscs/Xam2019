@@ -8,14 +8,26 @@
                 <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
 
-            <StackLayout Orientation="Horizontal">
+            <StackLayout>
                 <Image Source="{Binding ImagePath}" WidthRequest="200" HeightRequest="200" />
-                <StackLayout>
-                    <Label Text="{Binding Title}" FontSize="24" />
-                    <Label Text="{Binding Company}" FontSize="24" />
-                    <Label Text="{Binding Price}" FontSize="24" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Title" FontSize="24"/>
+                    <Entry WidthRequest="200" Text="{Binding Title}" FontSize="24" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Company" FontSize="24"/>
+                    <Entry WidthRequest="200" Text="{Binding Company}" FontSize="24" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Price" FontSize="24"/>
+                    <Entry WidthRequest="100" Text="{Binding Price}" FontSize="24" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Image" FontSize="14"/>
+                    <Entry Text="{Binding ImagePath}" FontSize="14" />
                 </StackLayout>
             </StackLayout>
+            <Button Text="Сохранить" x:Name="btnSave" Clicked="btnSave_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
